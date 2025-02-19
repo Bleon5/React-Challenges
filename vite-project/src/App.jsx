@@ -131,7 +131,7 @@ function App() {
           ) => (
             <Students
               key={index}
-              name={firstName}
+              firstName={firstName}
               lastName={lastName}
               age={age}
               course={course}
