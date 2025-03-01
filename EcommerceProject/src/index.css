@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  background: #222;
+  --custom-purple: #9c44c6;
+}
+@pluging "daisyui";
+/* src/index.css or src/styles.css */
+
+.bg-custom-purple {
+  background-color: var(--custom-purple);
+}
+
+.text-custom-purple {
+  color: var(--custom-purple);
+}
