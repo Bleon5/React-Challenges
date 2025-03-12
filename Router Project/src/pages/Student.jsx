@@ -1,9 +1,11 @@
 import { useParams } from "react-router-dom";
+import { useApp } from "../context/AppContext";
 
-function Student({ students }) {
+function Student() {
   const { id } = useParams();
+  const { students } = useApp();
   const student = students.find((student) => student.id === parseInt(id));
-  console.log(student);
+
   return student ? (
     <section>
       <h2>{student.name}</h2>

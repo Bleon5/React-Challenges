@@ -1,7 +1,9 @@
 import React from "react";
 import StudentLink from "../components/StudentLink";
+import { useApp } from "../context/AppContext";
 
-function Students({ students }) {
+function Students() {
+  const { students } = useApp();
   return (
     <section>
       <h2>Students</h2>
